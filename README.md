@@ -1,3 +1,3 @@
 ## 📸 Project Screenshots
 
-![Password Generator](./genpas/screenshots/site.png)
+![Password Generator](./screenshots/site.png)
