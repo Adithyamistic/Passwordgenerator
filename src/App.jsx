@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import "./App.css";
 
 function App() {
-  const [length, setlength] = useState(8);
+  const [length, setlength] = useState(8); //this is hook for length
   const [numberall, setnumberall] = useState(false);
   const [charall, setcharall] = useState(false);
   const [pasword, setpasword] = useState();
@@ -23,7 +23,7 @@ function App() {
   }, [length, numberall, charall]);
   useEffect(() => {
     spass();
-  }, [length, numberall, charall]);
+  }, [length, numberall, charall,spass]);
   const cpymaal = useCallback(() => {
     genpass.current?.select();
     window.navigator.clipboard.write(pasword);
